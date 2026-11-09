@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Texas Pizza</title>
+<meta name="description" content="Pizzeria artisanale à Lomme : pâte faite sur place, légumes du primeur, viande halal. 30 pizzas en 24, 29 et 50 cm. À emporter au 03 20 92 99 96.">
+<link rel="canonical" href="https://www.texaspizza.fr/">
+<meta name="theme-color" content="#12110f">
+<!-- Search Console : collez ici la balise de validation fournie par Google
+<meta name="google-site-verification" content="CODE_A_COLLER"> -->
+
+<!-- Réseaux sociaux -->
+<meta property="og:type" content="restaurant">
+<meta property="og:site_name" content="Texas Pizza Lomme">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Texas Pizza Lomme · Pizzas artisanales">
+<meta property="og:description" content="Pâte faite sur place, produits locaux. 30 pizzas en 24, 29 et 50 cm. Commande au 03 20 92 99 96.">
+<meta property="og:url" content="https://www.texaspizza.fr/">
+<meta property="og:image" content="https://www.texaspizza.fr/assets/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Texas Pizza Lomme, une pizza garnie sur fond noir">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Icônes -->
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+
+<!-- Vitesse : polices locales préchargées, scripts différés -->
+<link rel="preload" href="assets/fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/bodoni-moda-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/data.js" defer></script>
+<script src="assets/js/pizza.js" defer></script>
+<script src="assets/js/app.js" defer></script>
+<script src="assets/js/site.js" defer></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Texas Pizza",
+  "url": "https://www.texaspizza.fr/",
+  "image": "https://www.texaspizza.fr/assets/img/og-image.png",
+  "telephone": "+33320929996",
+  "servesCuisine": ["Pizza", "Pâtes"],
+  "priceRange": "€",
+  "hasMenu": "https://www.texaspizza.fr/#carte",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "375 Avenue de Dunkerque",
+    "postalCode": "59160",
+    "addressLocality": "Lomme",
+    "addressCountry": "FR"
+  },
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday", "Sunday"], "opens": "18:00", "closes": "22:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Wednesday", "Thursday", "Friday", "Saturday"], "opens": "11:30", "closes": "14:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Wednesday", "Thursday", "Friday", "Saturday"], "opens": "18:00", "closes": "22:00"}
+  ],
+  "sameAs": ["https://www.facebook.com/texaspizzalomme"]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#carte">Aller à la carte</a>
+
+<!-- Sprite : dégradé de la croûte + icônes au trait -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <radialGradient id="crust">
+      <stop offset=".80" stop-color="#e5a85c"/>
+      <stop offset=".92" stop-color="#cf8a42"/>
+      <stop offset="1" stop-color="#9d5d27"/>
+    </radialGradient>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M20 20l-4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+    <symbol id="i-shuffle" viewBox="0 0 24 24"><path d="M2 18h1.4c1.3 0 2.5-.6 3.3-1.7l6.1-8.6c.7-1.1 2-1.7 3.3-1.7H22M18 2l4 4-4 4M2 6h1.9c1.5 0 2.9.9 3.6 2.2M22 18h-5.9c-1.3 0-2.6-.7-3.3-1.8l-.5-.8M18 14l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M6 7h12l-1 14H7L6 7Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9 7V6a3 3 0 0 1 6 0v1" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+  </defs>
+</svg>
+
+<nav class="nav" aria-label="Navigation principale">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Texas Pizza Lomme, accueil"><span class="tp" aria-hidden="true">T<b>P</b></span><span class="name">Texas Pizza</span></a>
+    <div class="links">
+      <a href="#carte">La carte</a>
+      <a href="#compose">Compose ta pizza</a>
+      <a href="#xl">50 cm</a>
+      <a href="#pates">Pâtes du midi</a>
+      <a href="#boissons">Boissons</a>
+      <a href="#infos">Horaires et accès</a>
+    </div>
+    <span class="status" data-status role="status"><i aria-hidden="true"></i><span>Horaires</span></span>
+    <a class="btn primary sm" href="tel:+33320929996" aria-label="Appeler le 03 20 92 99 96"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg><span class="num">03 20 92 99 96</span></a>
+  </div>
+</nav>
+
+<main>
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <h1 class="enter">Texas <span>Pizza</span></h1>
+        <p class="slogan enter d1">Consommer nos pizzas, c'est manger local</p>
+        <p class="sub enter d2">Pizzas artisanales à Lomme, pâte faite sur place chaque jour, légumes du primeur et viande de boucherie. À emporter ou par téléphone.</p>
+        <div class="ctas enter d3">
+          <a class="btn primary" href="tel:+33320929996"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>Appeler le 03 20 92 99 96</a>
+          <a class="btn" href="#carte">Voir la carte</a>
+        </div>
+      </div>
+      <div class="hero-pz" id="hero-pz" role="img" aria-label="Pizza garnie d'olives, champignons, pepperoni, poivrons, tomates cerises et chèvre"></div>
+    </div>
+    <div class="facts">
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=375+Avenue+de+Dunkerque+59160+Lomme" target="_blank" rel="noopener"><span class="meta">Adresse</span><b>375, avenue de Dunkerque, Lomme</b></a>
+      <a href="#infos"><span class="meta">Commande</span><b>Téléphone, à emporter, livraison</b></a>
+      <div><span class="meta">Aujourd'hui</span><b data-status-long>Voir les horaires</b></div>
+    </div>
+  </div>
+</header>
+
+<section id="engagements" aria-labelledby="t-engage">
+  <div class="wrap engage">
+    <div>
+      <h2 class="title sig" id="t-engage">Fait ici, chaque jour</h2>
+      <p style="color:var(--text-2);margin-top:24px;max-width:28rem">Tout ce qui part dans nos fours est préparé sur place, avec des produits choisis près de chez nous.</p>
+      <div class="badge">
+        <svg viewBox="0 0 150 150" aria-hidden="true">
+          <defs><path id="sc" d="M75 75m-58 0a58 58 0 1 1 116 0a58 58 0 1 1-116 0"/><clipPath id="fc"><circle cx="75" cy="75" r="30"/></clipPath></defs>
+          <text font-family="Instrument Sans" font-size="12" letter-spacing="3" fill="#e8402f"><textPath href="#sc">FABRICATION · ARTISANALE · FABRICATION · ARTISANALE ·</textPath></text>
+          <circle cx="75" cy="75" r="40" fill="none" stroke="#e8402f" stroke-width="2"/>
+          <g clip-path="url(#fc)"><rect x="45" y="45" width="20" height="60" fill="#2348a8"/><rect x="65" y="45" width="20" height="60" fill="#efe9de"/><rect x="85" y="45" width="20" height="60" fill="#e8402f"/></g>
+        </svg>
+        <span>Fabrication artisanale, en France</span>
+      </div>
+    </div>
+    <ol class="vals">
+      <li><span class="n" aria-hidden="true">01</span><h3>Pâte fabriquée sur place</h3><p>Pétrie ici chaque jour, pas livrée sous plastique</p></li>
+      <li><span class="n" aria-hidden="true">02</span><h3>Légumes du primeur Votre Marché</h3><p>Champignons, poivrons, oignons et tomates cerises de chez le primeur</p></li>
+      <li><span class="n" aria-hidden="true">03</span><h3>Viande de boucherie</h3><p>Poulet, merguez, bœuf et kebab certifiés halal</p></li>
+      <li><span class="n" aria-hidden="true">04</span><h3>Fromages sélectionnés</h3><p>Maroilles, reblochon, chèvre, gorgonzola, raclette et mozzarella 100 %</p></li>
+      <li><span class="n" aria-hidden="true">05</span><h3>Oeufs frais</h3><p>Des œufs bio sur les recettes qui en ont</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= LA CARTE ================= -->
+<section id="carte" style="padding-bottom:96px" aria-labelledby="t-carte">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="meta">30 recettes en 24, 29 et 50 cm</p><h2 class="title sig" id="t-carte">La carte</h2></div>
+      <p>Survolez une pizza pour la voir garnie. Changez la taille et tous les prix suivent. Ajoutez ce qui vous tente à votre liste, puis appelez.</p>
+    </div>
+  </div>
+  <div class="controls">
+    <div class="wrap">
+      <div class="cats" id="cats" role="group" aria-label="Catégories"></div>
+      <div class="seg" id="sizes" role="group" aria-label="Taille">
+        <button data-size="0" aria-pressed="false">24 cm</button>
+        <button data-size="1" aria-pressed="true">29 cm</button>
+        <button data-size="2" aria-pressed="false">50 cm</button>
+      </div>
+      <div class="break"></div>
+      <label class="search"><svg class="ico" aria-hidden="true"><use href="#i-search"/></svg><span class="sr-only">Rechercher</span><input id="q" type="search" placeholder="Rechercher un ingrédient ou une pizza"></label>
+      <button class="filter" id="f-halal" aria-pressed="false"><span class="box" aria-hidden="true"><svg><use href="#i-check"/></svg></span>Halal</button>
+      <button class="filter" id="f-veg" aria-pressed="false"><span class="box" aria-hidden="true"><svg><use href="#i-check"/></svg></span>Sans viande ni poisson</button>
+      <button class="filter" id="dice"><svg class="ico" aria-hidden="true"><use href="#i-shuffle"/></svg>Au hasard</button>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="board">
+      <aside class="stage" id="stage" aria-live="polite" aria-label="Pizza sélectionnée"></aside>
+      <div>
+        <ul class="list" id="list" aria-label="Pizzas"></ul>
+        <div class="supp" role="table" aria-label="Suppléments">
+          <span class="h" role="columnheader">Suppléments</span><span class="h" role="columnheader">24 cm</span><span class="h" role="columnheader">29 cm</span><span class="h" role="columnheader">50 cm</span>
+          <span>Viande et fromage</span><span>1,00 €</span><span>1,50 €</span><span>3,50 €</span>
+          <span>Légumes</span><span>0,50 €</span><span>1,00 €</span><span>2,00 €</span>
+        </div>
+        <p class="tbc" style="margin-top:16px">Allergènes : la liste des allergènes de chaque recette est disponible sur demande, en boutique ou par téléphone.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COMPOSE ================= -->
+<section id="compose" aria-labelledby="t-compose">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="meta">Votre base, vos ingrédients</p><h2 class="title sig" id="t-compose">Compose ta pizza</h2></div>
+      <p>Une base et de 1 à 5 ingrédients. La pizza se garnit à chaque choix et le prix suit.</p>
+    </div>
+    <div class="builder">
+      <div>
+        <div class="step"><div class="step-h"><span class="n" aria-hidden="true">01</span><h3>La taille</h3></div><div class="opts" id="b-size" role="group" aria-label="Taille"></div></div>
+        <div class="step"><div class="step-h"><span class="n" aria-hidden="true">02</span><h3>La base</h3></div><div class="opts" id="b-base" role="group" aria-label="Base"></div></div>
+        <div class="step"><div class="step-h"><span class="n" aria-hidden="true">03</span><h3>Les ingrédients</h3><span class="c" id="b-count">0 choisi</span></div><div id="b-ing"></div></div>
+      </div>
+      <aside class="live" aria-live="polite" aria-label="Votre pizza">
+        <svg class="pz" id="b-svg" viewBox="0 0 400 400" aria-hidden="true"></svg>
+        <div class="tiers" id="b-tiers"></div>
+        <div class="hint" id="b-hint"></div>
+        <div class="total"><span class="meta">Total</span><b id="b-total">—</b></div>
+        <button class="btn" id="b-add" style="width:100%;margin-top:16px" disabled><svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg>Ajouter à ma liste</button>
+        <p class="fine">Prix de la carte pour 1, 3 ou 5 ingrédients. Burratina + 2 €. (Pour 2 ou 4 ingrédients on compte le palier au-dessus, au-delà de 5 les suppléments s'ajoutent. Calcul indicatif, à confirmer en boutique.)</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 50 CM ================= -->
+<section id="xl" aria-labelledby="t-xl">
+  <div class="wrap">
+    <div class="xl">
+      <div class="xl-pz"><svg id="xl-svg" viewBox="0 0 500 500" role="img" aria-label="Aperçu de la pizza 50 cm, cliquez sur une part pour la choisir"></svg></div>
+      <div>
+        <p class="meta">Pizzas 50 cm</p>
+        <h2 class="title sig" id="t-xl">Jusqu'à 4 recettes sur la même pizza</h2>
+        <p class="lead">Choisissez une recette par part. Base tomate, crème et barbecue peuvent se partager la même pizza.</p>
+        <div class="seg" id="xl-modes" role="group" aria-label="Nombre de recettes" style="width:max-content">
+          <button data-n="1" aria-pressed="false">1 recette</button>
+          <button data-n="2" aria-pressed="true">2 recettes</button>
+          <button data-n="4" aria-pressed="false">4 recettes</button>
+        </div>
+        <div class="slots" id="xl-slots"></div>
+        <div class="xl-price"><b id="xl-price">—</b><span id="xl-rule"></span></div>
+        <button class="btn" id="xl-add" style="margin-top:24px"><svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg>Ajouter à ma liste</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PÂTES ================= -->
+<section id="pates" aria-labelledby="t-pates">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="meta">Au comptoir des gratins</p><h2 class="title sig" id="t-pates">Les pâtes du midi</h2></div>
+      <div><span class="noon"><svg class="ico" aria-hidden="true"><use href="#i-clock"/></svg>Du mercredi au samedi, 11h30 – 14h</span><p>Penne gratinées au four. Poulet et bœuf certifiés halal.</p></div>
+    </div>
+    <div class="formules">
+      <div><b>7,50 €</b><small>Le gratin seul</small></div>
+      <div><b>9,00 €</b><small>Gratin et une boisson</small></div>
+      <div><b>11,00 €</b><small>Gratin, une boisson et un dessert</small></div>
+    </div>
+    <div class="pasta" id="pasta"></div>
+  </div>
+</section>
+
+<!-- ================= BOISSONS ================= -->
+<section id="boissons" style="padding-bottom:96px" aria-labelledby="t-boissons">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="meta">Soda, eau, bière et vin</p><h2 class="title sig" id="t-boissons">Les boissons</h2></div>
+    </div>
+    <div class="drinks" id="drinks"></div>
+    <p class="tbc" style="margin-top:24px">L'abus d'alcool est dangereux pour la santé, à consommer avec modération. Vente d'alcool interdite aux mineurs.</p>
+  </div>
+</section>
+
+<!-- ================= INFOS ================= -->
+<section id="infos" style="border-top:1px solid var(--line)" aria-labelledby="t-infos">
+  <div class="wrap">
+    <div class="sec-head"><div><h2 class="title sig" id="t-infos">Horaires et accès</h2></div></div>
+    <div class="contact">
+      <div class="panel">
+        <p class="meta">Par téléphone</p>
+        <a class="big-phone" href="tel:+33320929996">03.20.92.99.96</a>
+        <p class="note">Commandez avant 18h30 pour votre soirée. Retrait en boutique en 25 minutes environ.</p>
+        <div class="order">
+          <a class="btn" href="https://www.texaspizza.fr/online-ordering" target="_blank" rel="noopener">Commander en ligne</a>
+          <a class="textlink" href="https://www.facebook.com/texaspizzalomme" target="_blank" rel="noopener">Facebook</a>
+          <a class="textlink" href="https://www.ubereats.com/fr" target="_blank" rel="noopener">Uber Eats</a>
+          <a class="textlink" href="https://deliveroo.fr" target="_blank" rel="noopener">Deliveroo</a>
+          <a class="textlink" data-mail="texaspizza59" data-domain="gmail.com" href="#infos">Écrire un email</a>
+        </div>
+        <p class="tbc" style="margin-top:12px">(liens directs Uber Eats et Deliveroo à compléter)</p>
+        <div class="map" data-map="https://www.google.com/maps?q=375+Avenue+de+Dunkerque+59160+Lomme&amp;output=embed" data-map-title="Plan d'accès à Texas Pizza Lomme">
+          <div class="map-ph">
+            <p>La carte est fournie par Google Maps, qui peut déposer des cookies. Elle ne s'affiche qu'avec votre accord.</p>
+            <button class="btn sm" data-map-load>Afficher la carte</button>
+            <a class="textlink" href="https://www.google.com/maps/search/?api=1&amp;query=375+Avenue+de+Dunkerque+59160+Lomme" target="_blank" rel="noopener">Ouvrir dans Google Maps</a>
+          </div>
+        </div>
+        <p class="note">375, avenue de Dunkerque, 59160 Lomme</p>
+      </div>
+      <div class="panel">
+        <p class="meta">Horaires</p>
+        <table class="hours" id="hours"><caption class="sr-only">Horaires d'ouverture</caption></table>
+        <div class="month">
+          <p class="meta">Pizza du mois</p>
+          <h3>Une recette différente chaque mois</h3>
+          <p class="note">À découvrir sur notre page Facebook ou par téléphone</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><a href="#top" class="logo"><span class="tp" aria-hidden="true">T<b>P</b></span><span class="name">Texas Pizza Lomme</span></a><p style="margin-top:12px">375, avenue de Dunkerque, 59160 Lomme · 03.20.92.99.96</p></div>
+    <nav class="foot-links" aria-label="Informations légales">
+      <a href="mentions-legales.html">Mentions légales</a>
+      <a href="confidentialite.html">Confidentialité</a>
+      <a href="cgu.html">Conditions d'utilisation</a>
+      <button data-cookie-settings>Gérer les cookies</button>
+    </nav>
+  </div>
+</footer>
+
+<div class="dock hide" id="dock">
+  <a class="btn primary call-m" href="tel:+33320929996"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>Appeler</a>
+  <button class="btn cart-btn" id="open-cart"><svg class="ico" aria-hidden="true"><use href="#i-bag"/></svg>Ma liste <span class="count" id="cart-count">0</span></button>
+</div>
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="Ma liste de commande" aria-hidden="true">
+  <header><h2 style="font-weight:500;font-size:18px">Ma liste</h2><button class="x" id="close-cart" aria-label="Fermer"><svg class="ico" aria-hidden="true"><use href="#i-x"/></svg></button></header>
+  <ul id="cart-list"></ul>
+  <footer>
+    <div class="sum"><span>Total estimé</span><b id="cart-total">0,00 €</b></div>
+    <a class="btn primary" href="tel:+33320929996"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>Appeler pour commander</a>
+    <p class="fine">Gardez cette liste sous les yeux pendant l'appel. Pas de paiement sur ce site.</p>
+    <button class="textlink" id="clear-cart">Vider la liste</button>
+  </footer>
+</aside>
+<noscript><p style="padding:16px;text-align:center">La carte interactive a besoin de JavaScript. Commandez au 03 20 92 99 96.</p></noscript>
+</body>
+</html>
